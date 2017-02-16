@@ -104,10 +104,10 @@ public class Datakontrakt {
 		for (int i = 0; i < medlemstabell.length && matchIndex < 0; i++) {
 			if (medlemstabell[medlemsIndex].passerTil(medlemstabell[i])) {
 				matchIndex = i;
+				medlemstabell[medlemsIndex].setStatusIndeks(matchIndex);
+				medlemstabell[matchIndex].setStatusIndeks(medlemsIndex);
 			}
 		}
-		medlemstabell[medlemsIndex].setStatusIndeks(matchIndex);
-		medlemstabell[matchIndex].setStatusIndeks(medlemsIndex);
 		return matchIndex;
 	}
 
