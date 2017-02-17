@@ -7,16 +7,16 @@ package no.hib.dat102.modell;
  *
  */
 
-public class Datakontrakt {
+public class Datakontakt {
 	private static int STDK = 100;
 	private Medlem[] medlemstabell;
 	private int antall;
 
-	public Datakontrakt() {
+	public Datakontakt() {
 		this(STDK);
 	}
 
-	public Datakontrakt(int storrelse) {
+	public Datakontakt(int storrelse) {
 		this.antall = 0;
 		this.medlemstabell = new Medlem[storrelse];
 	}

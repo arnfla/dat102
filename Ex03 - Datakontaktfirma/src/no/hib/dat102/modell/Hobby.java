@@ -11,14 +11,14 @@ public class Hobby {
 	private String hobbyNavn;
 
 	/**
-	 * Tom konstruktør for hobby
+	 * Tom konstruktoer for hobby
 	 */
 	public Hobby() {
 		this("");
 	}
 
 	/**
-	 * Konstruktør for hobby
+	 * Konstruktoer for hobby
 	 * 
 	 * @param hobby
 	 *            Hobby

@@ -3,6 +3,7 @@ package no.hib.dat102.modell;
 import java.util.Iterator;
 
 import no.hib.dat102.mengde.adt.MengdeADT;
+import no.hib.dat102.mengde.kjedet.KjedetMengde;
 
 /**
  * Representasjona av ett medlem
@@ -16,12 +17,12 @@ public class Medlem {
 	private int statusIndeks;
 	
 	public Medlem() {
-		this("", null, -1);
+		this("", -1);
 	}
 
-	public Medlem(String navn, MengdeADT<Hobby> hobbyer, int statusIndeks) {
+	public Medlem(String navn, int statusIndeks) {
 		this.navn = navn;
-		this.hobbyer = hobbyer;
+		this.hobbyer = new KjedetMengde<Hobby>();
 		this.statusIndeks = statusIndeks;
 	}
 

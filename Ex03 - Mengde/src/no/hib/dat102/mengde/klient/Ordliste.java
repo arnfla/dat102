@@ -50,10 +50,11 @@ public class Ordliste {
 
 		// Lager differansen av de to ordlistene
 		KjedetMengde<String> ordListeDiff = new KjedetMengde<String>();
-		ordListeDiff = (KjedetMengde<String>) ordListe1.differens(ordListe2);
+		ordListeDiff = (KjedetMengde<String>) ordListe1.differans(ordListe2);
 		System.out.println("Utskrift av differansen av begge ordlistene");
 
 		//....
 		
 
+}
 }
